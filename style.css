@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #141414;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.header__logo img {
+  height: 30px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.header__profile {
+  display: flex;
+  align-items: center;
+}
+
+.header__profile img {
+  height: 35px;
+  width: 35px; /* Ensure the image has a width */
+  border-radius: 50%; /* Make the image circular */
+}
+
+.main {
+  padding-top: 80px; /* Adjust padding to match header height */
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero__overlay h1 {
+  font-size: 3em;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.row img {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #141414;
+}
